@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Carro.
+    -->
+    <changeSet id="20200522212227-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="carro_id"
+                                 baseTableName="carro_endereco"
+                                 constraintName="fk_carro_endereco_carro_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="carro"/>
+
+        <addForeignKeyConstraint baseColumnNames="endereco_id"
+                                 baseTableName="carro_endereco"
+                                 constraintName="fk_carro_endereco_endereco_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="endereco"/>
+        
+        <addForeignKeyConstraint baseColumnNames="pessoa_id"
+                                 baseTableName="carro"
+                                 constraintName="fk_carro_pessoa_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="pessoa"/>
+
+    </changeSet>
+</databaseChangeLog>
