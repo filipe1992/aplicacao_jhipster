@@ -1,0 +1,49 @@
+{
+  "name": "Endereco",
+  "fields": [
+    {
+      "fieldName": "pais",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "bairro",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "rua",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "pessoa",
+      "otherEntityRelationshipName": "endereco",
+      "relationshipName": "pessoa",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "carro",
+      "otherEntityRelationshipName": "endereco",
+      "relationshipName": "carro",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20200522212327",
+  "entityTableName": "endereco",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

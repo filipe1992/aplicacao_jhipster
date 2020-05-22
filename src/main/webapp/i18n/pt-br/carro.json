@@ -1,0 +1,25 @@
+{
+  "aplicacaojhipsterApp": {
+    "carro": {
+      "home": {
+        "title": "Carros",
+        "createLabel": "Criar novo Carro",
+        "createOrEditLabel": "Criar ou editar Carro",
+        "notFound": "Nenhum Carro encontrado"
+      },
+      "created": "Um novo Carro foi criado com o identificador {{ param }}",
+      "updated": "Um Carro foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Carro foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Carro {{ id }}?"
+      },
+      "detail": {
+        "title": "Carro"
+      },
+      "nome": "Nome",
+      "placa": "Placa",
+      "endereco": "Endereco",
+      "pessoa": "Pessoa"
+    }
+  }
+}

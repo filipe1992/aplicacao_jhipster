@@ -1,0 +1,27 @@
+{
+  "aplicacaojhipsterApp": {
+    "endereco": {
+      "home": {
+        "title": "Enderecos",
+        "createLabel": "Criar novo Endereco",
+        "createOrEditLabel": "Criar ou editar Endereco",
+        "notFound": "Nenhum Endereco encontrado"
+      },
+      "created": "Um novo Endereco foi criado com o identificador {{ param }}",
+      "updated": "Um Endereco foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Endereco foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Endereco {{ id }}?"
+      },
+      "detail": {
+        "title": "Endereco"
+      },
+      "pais": "Pais",
+      "estado": "Estado",
+      "bairro": "Bairro",
+      "rua": "Rua",
+      "pessoa": "Pessoa",
+      "carro": "Carro"
+    }
+  }
+}

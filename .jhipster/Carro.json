@@ -1,0 +1,41 @@
+{
+  "name": "Carro",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "placa",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "endereco",
+      "otherEntityRelationshipName": "carro",
+      "relationshipName": "endereco",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "pessoa",
+      "otherEntityRelationshipName": "carro",
+      "relationshipName": "pessoa",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200522212227",
+  "entityTableName": "carro",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
